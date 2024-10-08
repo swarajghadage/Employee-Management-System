@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Employee_Management_System</display-name>
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+ 	<servlet>
+  <servlet-name>SecondPage</servlet-name>
+  <servlet-class>com.nt.employee.SecondPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+ 		<servlet-name>SecondPage</servlet-name>
+ 		<url-pattern>/second</url-pattern> 
+ 	</servlet-mapping>
+ 	
+ <!-- 	<servlet>
+  <servlet-name>user</servlet-name>
+  <servlet-class>com.nt.employee.User_login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+ 		<servlet-name>user</servlet-name>
+ 		<url-pattern>/userlogin</url-pattern> 
+ 	</servlet-mapping> -->
+ 	
+ 	<servlet>
+  <servlet-name>userlogin</servlet-name>
+  <servlet-class>com.nt.employee.User_login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+ 		<servlet-name>userlogin</servlet-name>
+ 		<url-pattern>/userlogin</url-pattern> 
+ 	</servlet-mapping>
+ 	
+ 	
+ 	
+ 	<servlet>
+  <servlet-name>AddEmployee</servlet-name>
+  <servlet-class>com.nt.employee.AddEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+ 		<servlet-name>AddEmployee</servlet-name>
+ 		<url-pattern>/add</url-pattern> 
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+  <servlet-name>attendence</servlet-name>
+  <servlet-class>com.nt.employee.Attendence</servlet-class>
+  </servlet>
+  <servlet-mapping>
+ 		<servlet-name>attendence</servlet-name>
+ 		<url-pattern>/atd</url-pattern> 
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+  <servlet-name>addsalary</servlet-name>
+  <servlet-class>com.nt.employee.AddSalary</servlet-class>
+  </servlet>
+  <servlet-mapping>
+ 		<servlet-name>addsalary</servlet-name>
+ 		<url-pattern>/salary</url-pattern> 
+ 	</servlet-mapping>
+ 	
+ 	
+ 	<servlet>
+  <servlet-name>Adddepartment</servlet-name>
+  <servlet-class>com.nt.employee.AddDept</servlet-class>
+  </servlet>
+  <servlet-mapping>
+ 		<servlet-name>Adddepartment</servlet-name>
+ 		<url-pattern>/dept</url-pattern> 
+ 	</servlet-mapping>
+ 	
+ 	
+ 	<servlet>
+  <servlet-name>Adddepeon</servlet-name>
+  <servlet-class>com.nt.employee.AddPeon</servlet-class>
+  </servlet>
+  <servlet-mapping>
+ 		<servlet-name>Adddepeon</servlet-name>
+ 		<url-pattern>/addepeon</url-pattern> 
+ 	</servlet-mapping>
+ 	
+ 	
+ 	
+ 	<servlet>
+  <servlet-name>Review</servlet-name>
+  <servlet-class>com.nt.employee.AddReview</servlet-class>
+  </servlet>
+  <servlet-mapping>
+ 		<servlet-name>Review</servlet-name>
+ 		<url-pattern>/review</url-pattern> 
+ 	</servlet-mapping>
+ 	<!-- selectall -->
+ 	<servlet>
+    <servlet-name>viewall</servlet-name>
+    <servlet-class>com.nt.employee.ViewAllServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>viewall</servlet-name>
+    <url-pattern>/Viewall</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>salry</servlet-name>
+    <servlet-class>com.nt.employee.ViewSalary</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>salry</servlet-name>
+    <url-pattern>/ViewSal</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+    <servlet-name>viewallhr</servlet-name>
+    <servlet-class>com.nt.employee.ViewHR</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>viewallhr</servlet-name>
+    <url-pattern>/Viewallhr</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>viewatd</servlet-name>
+    <servlet-class>com.nt.employee.ViewAtd</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>viewatd</servlet-name>
+    <url-pattern>/viewatd</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>peon</servlet-name>
+    <servlet-class>com.nt.employee.ViewPeon</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>peon</servlet-name>
+    <url-pattern>/viewpeon</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>viewallceo</servlet-name>
+    <servlet-class>com.nt.employee.ViewCeo</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>viewallceo</servlet-name>
+    <url-pattern>/viewallceo</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>viewallEmp</servlet-name>
+    <servlet-class>com.nt.employee.ViewEmp</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>viewallEmp</servlet-name>
+    <url-pattern>/viewEmp</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>viewallreview</servlet-name>
+    <servlet-class>com.nt.employee.ViewReview</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>viewallreview</servlet-name>
+    <url-pattern>/viewReview</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>viewalldept</servlet-name>
+    <servlet-class>com.nt.employee.ViewAllDept</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>viewalldept</servlet-name>
+    <url-pattern>/ViewAllDept</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ 		<servlet-name>selectbyid</servlet-name>
+ 		<servlet-class>com.nt.employee.ViewByIdServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>selectbyid</servlet-name>
+ 		<url-pattern>/SelectId</url-pattern> 
+ 	</servlet-mapping>
+ 	<servlet>
+ 		<servlet-name>remove</servlet-name>
+ 		<servlet-class>com.nt.employee.RemoveServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>remove</servlet-name>
+ 		<url-pattern>/remove</url-pattern> 
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+        <servlet-name>delete</servlet-name>
+        <servlet-class>com.nt.employee.DeleteEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delete</servlet-name>
+        <url-pattern>/remove1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+ 		<servlet-name>deletedept</servlet-name>
+ 		<servlet-class>com.nt.employee.DeleteDept</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>deletedept</servlet-name>
+ 		<url-pattern>/deletedept</url-pattern> 
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+ 		<servlet-name>deletedept1</servlet-name>
+ 		<servlet-class>com.nt.employee.DeleteDept1</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>deletedept1</servlet-name>
+ 		<url-pattern>/deletedept1</url-pattern> 
+ 	</servlet-mapping>
+    
+    <servlet>
+        <servlet-name>update</servlet-name>
+        <servlet-class>com.nt.employee.Update</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>update</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>updateservlet</servlet-name>
+        <servlet-class>com.nt.employee.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateservlet</servlet-name>
+        <url-pattern>/updateEmployee</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>updatedept</servlet-name>
+        <servlet-class>com.nt.employee.UpdateDept</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updatedept</servlet-name>
+        <url-pattern>/updateDt</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>updatedept1</servlet-name>
+        <servlet-class>com.nt.employee.UpdateDept1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updatedept1</servlet-name>
+        <url-pattern>/updatedept</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>updatesal</servlet-name>
+        <servlet-class>com.nt.employee.UpdateSalary</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updatesal</servlet-name>
+        <url-pattern>/updatesal</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>updatesal1</servlet-name>
+        <servlet-class>com.nt.employee.UpdateSalary1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updatesal1</servlet-name>
+        <url-pattern>/updatesalary</url-pattern>
+    </servlet-mapping>
+    
+    
+ 	
+ 	
+ 	
+ 	
+ 	
+</web-app>
